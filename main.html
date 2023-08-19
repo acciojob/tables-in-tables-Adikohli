@@ -2,12 +2,36 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <title>Table</title>
-    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* Add CSS styles to ensure table borders */
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        height: 100%;
+      }
+
+      th, td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+      }
+
+      /* Style for the cell with black background */
+      td.special {
+        background-color: black;
+        color: white;
+      }
+
+      /* Adjust more styles as needed */
+    </style>
   </head>
   <body>
-    <table style="width: 100%; height: 100%">
+    <table>
       <tr>
         <td>
           <table>
@@ -73,7 +97,7 @@
               <td>Column 2</td>
             </tr>
             <tr>
-              <td style="background-color: black; color: white;">HTML</td>
+              <td class="special">HTML</td>
               <td>Row 1</td>
             </tr>
             <!-- Add more rows as needed -->
